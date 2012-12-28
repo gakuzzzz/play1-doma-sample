@@ -1,0 +1,34 @@
+h1. Domaモジュール
+
+p(note). Play framework1.2.4でDomaを使用できるようにするモジュールです。
+
+
+h2. サンプルアプリケーション
+
+p(note). @samples-and-tests@ にSelect、Insert、Update、Delete操作を実装したユーザー管理アプリケーションがあります。
+
+h2. 設定方法
+
+p(note). ダウンロードしたモジュールをdependencies.ymlに記述して @play dependencies@、または、 @play deps@を実行します。
+
+例）
+<pre>
+require:
+    - play
+    - doma -> doma
+
+repositories:
+    - My modules:
+        type:       local
+        artifact:   ${application.path}/../../../[module]
+        contains:
+            - doma
+</pre>
+
+h2. 使用方法
+
+p(note). "ドキュメント":http://hina0118.github.com/Play-Doma.html を参照してください。
+
+h2. コマンド
+
+p(note). @play eclipsify@、 @play ec@コマンドでEclipseのapt設定を追加設定するようになっています。EclipseにインポートするだけでDoma、aptが使用可能です。

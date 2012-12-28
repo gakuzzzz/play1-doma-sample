@@ -1,0 +1,21 @@
+# Application dependencies
+
+require:
+    - play
+    - play             -> guice          1.2
+    - org.seasar.doma  -> doma           1.27.0-SNAPSHOT
+    - doma             -> doma
+
+repositories:
+    - seasar snapshots:
+        type: http
+        root: "http://maven.seasar.org/maven2-snapshot/org/seasar/doma/doma/1.27.0-SNAPSHOT/doma-1.27.0-20121226.175636-4.jar"
+        contains:
+            - org.seasar.doma -> doma 1.27.0-SNAPSHOT
+    
+    - local modules:
+        type:       local
+        artifact:   ${application.path}/local-modules/play-doma
+        contains:
+            - doma
+    

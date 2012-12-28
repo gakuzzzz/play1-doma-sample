@@ -1,0 +1,12 @@
+self: play -> doma 0.2
+
+require:
+    - play
+    - org.seasar.doma -> doma 1.27.0-SNAPSHOT
+
+repositories:
+    - seasar snapshots:
+        type: http
+        root: "http://maven.seasar.org/maven2-snapshot/org/seasar/doma/doma/1.27.0-SNAPSHOT/doma-1.27.0-20121226.175636-4.jar"
+        contains:
+            - org.seasar.doma -> doma 1.27.0-SNAPSHOT

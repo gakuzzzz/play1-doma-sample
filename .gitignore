@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings
+.factorypath
+.env
+.apt_generated
+eclipse
+logs
+tmp
+precompiled
+test-result
+*.iml
+*.ipr
+*.iws
+app/doma/*/dao/*Impl.java
+app/doma/*/*/_*.java
